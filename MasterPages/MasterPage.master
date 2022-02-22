@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPages_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="style1">
+        <div class="style1">
+        <asp:Label ID="lblMessage" runat="server"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnAccount" runat="server" onclick="btnAccount_Click" />
+            &nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnLog" runat="server" onclick="btnLog_Click" Text="登入" />
+        </div>
+        <div>
+           <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" 
+                style="text-align: left">
+           </asp:Menu>
+        </div>
+        
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+       
+    </div>
+    </form>
+</body>
+</html>

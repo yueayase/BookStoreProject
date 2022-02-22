@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/" title="首頁"  description="首頁">
+        <siteMapNode url="~/LeisureAndLife/Default.aspx" title="休閒生活" description="休閒生活">
+            <siteMapNode url="~/LeisureAndLife/Entertainment.aspx" title="休閒娛樂" description="休閒娛樂" />
+            <siteMapNode url="~/LeisureAndLife/Visit.aspx" title="旅遊" description="旅遊" />
+        </siteMapNode>
+        <siteMapNode url="~/ScienceAndMedical/Default.aspx" title="科學醫療" description="科學醫療">
+            <siteMapNode url="~/ScienceAndMedical/Application.aspx" title="應用科學" description="應用科學" />
+            <siteMapNode url="~/ScienceAndMedical/Science.aspx" title="自然科學" description="自然科學" />
+            <siteMapNode url="~/ScienceAndMedical/Medical.aspx" title="醫療保健" description="醫療保健" />
+        </siteMapNode>
+        <siteMapNode url="~/LanguageAndComputer/Default.aspx" title="語言電腦" description="語言電腦">
+            <siteMapNode url="~/LanguageAndComputer/LanguageLearning.aspx" title="語言學習" description="語言學習" />
+            <siteMapNode url="~/LanguageAndComputer/Computer.aspx" title="電腦" description="電腦" />
+            <siteMapNode url="~/LanguageAndComputer/Exam.aspx" title="考用書" description="考用書" />
+        </siteMapNode>
+    </siteMapNode>
+</siteMap>

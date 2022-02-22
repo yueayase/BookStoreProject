@@ -1,0 +1,4 @@
+We receive your request,
+Your password: ##Password##
+
+Be careful...

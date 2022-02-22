@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96915FDB-FEC2-43BB-83B3-5FB09E8E54AD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookStoreProject</RootNamespace>
+    <AssemblyName>BookStoreProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdministratorInterfaces\ManagementDatabase.aspx" />
+    <Content Include="App_Data\BasicMailBody.txt" />
+    <Content Include="App_Data\BookStoreDB.mdf" />
+    <Content Include="App_Data\BookStoreDB_log.LDF">
+      <DependentUpon>BookStoreDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\RecoveryMailBody.txt" />
+    <Content Include="BusinessAndFinance\Default.aspx" />
+    <Content Include="BusinessAndFinance\HumanitiesAndSocialScience.aspx" />
+    <Content Include="BusinessAndFinance\Invest.aspx" />
+    <Content Include="BusinessAndFinance\Management.aspx" />
+    <Content Include="Buy\ShoppingCart.aspx" />
+    <Content Include="ControlProduct\AddOrDeleteProduct.aspx" />
+    <Content Include="ControlProduct\UpdateProduct.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Detailed_Information.aspx" />
+    <Content Include="HumanitiesAndSociety\Default.aspx" />
+    <Content Include="HumanitiesAndSociety\HistoryAndGeography.aspx" />
+    <Content Include="HumanitiesAndSociety\HumanitiesAndSocialScience.aspx" />
+    <Content Include="HumanitiesAndSociety\LawAndPoliticsAndMilitary.aspx" />
+    <Content Include="HumanitiesAndSociety\Psychology.aspx" />
+    <Content Include="HumanitiesAndSociety\ReligionAndphilosophy.aspx" />
+    <Content Include="LanguageAndComputer\Computer.aspx" />
+    <Content Include="LanguageAndComputer\Computer\ASP.NET 3.5 Apress.jpg" />
+    <Content Include="LanguageAndComputer\Computer\ASP.NET 3.5 Imar.jpg" />
+    <Content Include="LanguageAndComputer\Computer\Ivor Horton.jpg" />
+    <Content Include="LanguageAndComputer\Computer\Java Programming 24-Hour Trainer.jpg" />
+    <Content Include="LanguageAndComputer\Computer\Programming Python.jpg" />
+    <Content Include="LanguageAndComputer\Computer\Python Essential Reference.jpg" />
+    <Content Include="LanguageAndComputer\Default.aspx" />
+    <Content Include="LanguageAndComputer\Exam.aspx" />
+    <Content Include="LanguageAndComputer\Exam\eaxm.txt" />
+    <Content Include="LanguageAndComputer\Exam\master_test.jpg" />
+    <Content Include="LanguageAndComputer\LanguageLearning.aspx" />
+    <Content Include="LanguageAndComputer\LanguageLearning\A Grammar of the English Tongue.jpg" />
+    <Content Include="LeisureAndLife\Default.aspx" />
+    <Content Include="LeisureAndLife\Entertainment.aspx" />
+    <Content Include="LeisureAndLife\Entertainment\180_sky.jpg" />
+    <Content Include="LeisureAndLife\Visit.aspx" />
+    <Content Include="LeisureAndLife\Visit\Taiwan_map.jpg" />
+    <Content Include="LiteralAndArt\Art.aspx" />
+    <Content Include="LiteralAndArt\Default.aspx" />
+    <Content Include="LiteralAndArt\Literal.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Membership\MemberCenter.aspx" />
+    <Content Include="Membership\PasswordRecovery.aspx" />
+    <Content Include="Membership\RevisePassword.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="ScienceAndMedical\Application.aspx" />
+    <Content Include="ScienceAndMedical\Application\natural_knowledge.jpg" />
+    <Content Include="ScienceAndMedical\Default.aspx" />
+    <Content Include="ScienceAndMedical\Medical.aspx" />
+    <Content Include="ScienceAndMedical\Medical\Medical_Surgical.jpg" />
+    <Content Include="ScienceAndMedical\Science.aspx" />
+    <Content Include="ScienceAndMedical\Science\physics_principle.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministratorInterfaces\ManagementDatabase.aspx.cs">
+      <DependentUpon>ManagementDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessAndFinance\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessAndFinance\HumanitiesAndSocialScience.aspx.cs">
+      <DependentUpon>HumanitiesAndSocialScience.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessAndFinance\Invest.aspx.cs">
+      <DependentUpon>Invest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessAndFinance\Management.aspx.cs">
+      <DependentUpon>Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buy\ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlProduct\AddOrDeleteProduct.aspx.cs">
+      <DependentUpon>AddOrDeleteProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlProduct\UpdateProduct.aspx.cs">
+      <DependentUpon>UpdateProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detailed_Information.aspx.cs">
+      <DependentUpon>Detailed_Information.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanitiesAndSociety\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanitiesAndSociety\HistoryAndGeography.aspx.cs">
+      <DependentUpon>HistoryAndGeography.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanitiesAndSociety\HumanitiesAndSocialScience.aspx.cs">
+      <DependentUpon>HumanitiesAndSocialScience.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanitiesAndSociety\LawAndPoliticsAndMilitary.aspx.cs">
+      <DependentUpon>LawAndPoliticsAndMilitary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanitiesAndSociety\Psychology.aspx.cs">
+      <DependentUpon>Psychology.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanitiesAndSociety\ReligionAndphilosophy.aspx.cs">
+      <DependentUpon>ReligionAndphilosophy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LanguageAndComputer\Computer.aspx.cs">
+      <DependentUpon>Computer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LanguageAndComputer\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LanguageAndComputer\Exam.aspx.cs">
+      <DependentUpon>Exam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LanguageAndComputer\LanguageLearning.aspx.cs">
+      <DependentUpon>LanguageLearning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeisureAndLife\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeisureAndLife\Entertainment.aspx.cs">
+      <DependentUpon>Entertainment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeisureAndLife\Visit.aspx.cs">
+      <DependentUpon>Visit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LiteralAndArt\Art.aspx.cs">
+      <DependentUpon>Art.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LiteralAndArt\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LiteralAndArt\Literal.aspx.cs">
+      <DependentUpon>Literal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Membership\MemberCenter.aspx.cs">
+      <DependentUpon>MemberCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Membership\PasswordRecovery.aspx.cs">
+      <DependentUpon>PasswordRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Membership\RevisePassword.aspx.cs">
+      <DependentUpon>RevisePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScienceAndMedical\Application.aspx.cs">
+      <DependentUpon>Application.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScienceAndMedical\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScienceAndMedical\Medical.aspx.cs">
+      <DependentUpon>Medical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScienceAndMedical\Science.aspx.cs">
+      <DependentUpon>Science.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Code\ClassDiagram.cd" />
+    <None Include="LanguageAndComputer\Computer\product.docx" />
+    <None Include="LanguageAndComputer\LanguageLearning\Speak English Like an American.docx" />
+    <Content Include="MasterPages\MasterPage.master" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59620</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,8 @@
+Hi,
+
+You have registered your account.
+
+YourId:       ##YourId##
+YourPassword: ##Password##
+
+If you have any quesions, please contact with us: myaspweb@gmail.com.
